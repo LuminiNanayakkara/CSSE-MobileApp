@@ -124,11 +124,11 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Suzuki Alto 2015</Text>
+            <Text style={styles.cardTitle}>Cement Block</Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
-              Suzuki Alto 800cc, 2015 good condition. First owner. AMW
-              maintained.
+              This hollow Cement Block have open or closed cavity and can be
+              used in the construction.
             </Text>
           </View>
         </View>
@@ -141,10 +141,11 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Toyota Premio</Text>
+            <Text style={styles.cardTitle}>Carpenter Tools</Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
-              Model : Toyota Premio Fuel Type : Petrol Cylinder Cpacity : 1600cc
+              This list not only shows you the tools that you need but also
+              provides a brief description tools carpenters use daily.
             </Text>
           </View>
         </View>
@@ -157,11 +158,11 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Suzuki Hustler Safety 2015</Text>
+            <Text style={styles.cardTitle}>Nippolac Paint</Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
-              Suzuki Hustler, 2015 Full option, Auto gear, White color, 02 air
-              bags, Push start, Safety brake
+              Nippolac Emulsion is an interior paint with a low sheen,
+              washability , good covering and resistance to alkali and fungus.
             </Text>
           </View>
         </View>
@@ -174,12 +175,11 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>2021 Acura for sale </Text>
+            <Text style={styles.cardTitle}>Electrical Tools </Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
               {' '}
-              Acura, 2015 Full option, Auto gear, White color, 02 air bags, Push
-              start, Safety brake
+              Electrical tools are tools used to work on an electrical system.
             </Text>
           </View>
         </View>
