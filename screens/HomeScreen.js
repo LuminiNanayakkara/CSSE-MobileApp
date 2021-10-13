@@ -33,9 +33,9 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('CardListScreen', {title: 'Restaurant'})
           }>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="earth" size={35} color="#283593" />
+            <MaterialCommunityIcons name="" size={35} color="#283593" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Services</Text>
+          <Text style={styles.categoryBtnTxt}>Materials</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.categoryBtn}
@@ -43,9 +43,9 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('Property', {title: 'Property Listings'})
           }>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="home" size={35} color="#283593" />
+            <MaterialCommunityIcons name="" size={35} color="#283593" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Property</Text>
+          <Text style={styles.categoryBtnTxt}>Paints</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
@@ -55,21 +55,21 @@ const HomeScreen = ({navigation}) => {
               color="#283593"
             />
           </View>
-          <Text style={styles.categoryBtnTxt}>Electronics</Text>
+          <Text style={styles.categoryBtnTxt}>Electrical</Text>
         </TouchableOpacity>
       </View>
       <View style={[styles.categoryContainer, {marginTop: 10}]}>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="car" size={35} color="#283593" />
+            <MaterialCommunityIcons name="" size={35} color="#283593" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Vehicles</Text>
+          <Text style={styles.categoryBtnTxt}>Tools</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="human" size={35} color="#283593" />
+            <MaterialCommunityIcons name="" size={35} color="#283593" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Jobs</Text>
+          <Text style={styles.categoryBtnTxt}>Steals</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
