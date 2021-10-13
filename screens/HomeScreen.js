@@ -100,16 +100,18 @@ const HomeScreen = ({navigation}) => {
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
             <Image
-              source={require('../assets/banners/two.jpg')}
+              source={require('../assets/banners/two.png')}
               resizeMode="cover"
               style={styles.cardImg}
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Kia sportage</Text>
+            <Text style={styles.cardTitle}>Nippon Cement</Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
-              Kia Sportage Brand new condition jeep for sale ..
+              Cement is manufactured through a closely controlled chemical
+              combination of calcium, silicon, aluminum, iron and other
+              ingredients
             </Text>
           </View>
         </View>
