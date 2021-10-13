@@ -33,7 +33,11 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('CardListScreen', {title: 'Restaurant'})
           }>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="" size={35} color="#283593" />
+            <MaterialCommunityIcons
+              name="palette-swatch"
+              size={35}
+              color="#283593"
+            />
           </View>
           <Text style={styles.categoryBtnTxt}>Materials</Text>
         </TouchableOpacity>
@@ -43,7 +47,11 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('Property', {title: 'Property Listings'})
           }>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="" size={35} color="#283593" />
+            <MaterialCommunityIcons
+              name="format-paint"
+              size={35}
+              color="#283593"
+            />
           </View>
           <Text style={styles.categoryBtnTxt}>Paints</Text>
         </TouchableOpacity>
@@ -61,15 +69,15 @@ const HomeScreen = ({navigation}) => {
       <View style={[styles.categoryContainer, {marginTop: 10}]}>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="" size={35} color="#283593" />
+            <MaterialCommunityIcons name="knife" size={35} color="#283593" />
           </View>
           <Text style={styles.categoryBtnTxt}>Tools</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="" size={35} color="#283593" />
+            <MaterialCommunityIcons name="nail" size={35} color="#283593" />
           </View>
-          <Text style={styles.categoryBtnTxt}>Steals</Text>
+          <Text style={styles.categoryBtnTxt}>Steels</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
