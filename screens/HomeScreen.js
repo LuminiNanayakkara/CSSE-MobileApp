@@ -25,31 +25,6 @@ const HomeScreen = ({navigation}) => {
   return (
     <ScrollView style={styles.container}>
       <StatusBar barStyle={theme.dark ? 'light-content' : 'dark-content'} />
-      <View style={styles.sliderContainer}>
-        <Swiper autoplay height={200} activeDotColor="#FF6347">
-          <View style={styles.slide}>
-            <Image
-              source={require('../assets/banners/five.jpg')}
-              resizeMode="cover"
-              style={styles.sliderImage}
-            />
-          </View>
-          <View style={styles.slide}>
-            <Image
-              source={require('../assets/banners/one.jpg')}
-              resizeMode="cover"
-              style={styles.sliderImage}
-            />
-          </View>
-          <View style={styles.slide}>
-            <Image
-              source={require('../assets/banners/three.jpg')}
-              resizeMode="cover"
-              style={styles.sliderImage}
-            />
-          </View>
-        </Swiper>
-      </View>
 
       <View style={styles.categoryContainer}>
         <TouchableOpacity
@@ -58,11 +33,7 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('CardListScreen', {title: 'Restaurant'})
           }>
           <View style={styles.categoryIcon}>
-          <MaterialCommunityIcons
-              name="earth"
-              size={35}
-              color="#283593"
-            />
+            <MaterialCommunityIcons name="earth" size={35} color="#283593" />
           </View>
           <Text style={styles.categoryBtnTxt}>Services</Text>
         </TouchableOpacity>
@@ -72,17 +43,17 @@ const HomeScreen = ({navigation}) => {
             navigation.navigate('Property', {title: 'Property Listings'})
           }>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons
-              name="home"
-              size={35}
-              color="#283593"
-            />
+            <MaterialCommunityIcons name="home" size={35} color="#283593" />
           </View>
           <Text style={styles.categoryBtnTxt}>Property</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
-            <MaterialCommunityIcons name="television" size={35} color="#283593" />
+            <MaterialCommunityIcons
+              name="television"
+              size={35}
+              color="#283593"
+            />
           </View>
           <Text style={styles.categoryBtnTxt}>Electronics</Text>
         </TouchableOpacity>
@@ -90,13 +61,13 @@ const HomeScreen = ({navigation}) => {
       <View style={[styles.categoryContainer, {marginTop: 10}]}>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
-          <MaterialCommunityIcons name="car" size={35} color="#283593" />
+            <MaterialCommunityIcons name="car" size={35} color="#283593" />
           </View>
           <Text style={styles.categoryBtnTxt}>Vehicles</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
-          <MaterialCommunityIcons name="human" size={35} color="#283593" />
+            <MaterialCommunityIcons name="human" size={35} color="#283593" />
           </View>
           <Text style={styles.categoryBtnTxt}>Jobs</Text>
         </TouchableOpacity>
@@ -116,7 +87,7 @@ const HomeScreen = ({navigation}) => {
             fontWeight: 'bold',
             color: '#333',
           }}>
-          Latest Listings
+          Items
         </Text>
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
@@ -195,8 +166,11 @@ const HomeScreen = ({navigation}) => {
           <View style={styles.cardInfo}>
             <Text style={styles.cardTitle}>2021 Acura for sale </Text>
             <StarRating ratings={4} reviews={99} />
-            <Text style={styles.cardDetails}> Acura, 2015 Full option, Auto gear, White color, 02 air
-              bags, Push start, Safety brake</Text>
+            <Text style={styles.cardDetails}>
+              {' '}
+              Acura, 2015 Full option, Auto gear, White color, 02 air bags, Push
+              start, Safety brake
+            </Text>
           </View>
         </View>
       </View>
