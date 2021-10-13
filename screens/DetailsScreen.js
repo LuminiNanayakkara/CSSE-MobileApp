@@ -65,15 +65,4 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#444',
   },
-  card: {
-    backgroundColor: '#1565C0',
-    marginBottom: 0,
-    width: '96%',
-    shadowColor: '#000',
-    shadowOpacity: 1,
-    shadowOffset: {
-      width: 3,
-      height: 3,
-    },
-  },
 });
