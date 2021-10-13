@@ -16,10 +16,11 @@ const SignUp = props => {
     <ScrollView style={{backgroundColor: 'white'}}>
       <View style={styles.container}>
         <Image
-          source={require('../assets/TOM.png')}
+          source={require('../assets/TOM.jpg')}
           resizeMode="center"
           style={styles.image}
         />
+
         <Text style={styles.textTitle}>Property Add Form</Text>
         <Input name="Title" />
         <Input name="Price" />
