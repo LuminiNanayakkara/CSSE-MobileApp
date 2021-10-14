@@ -14,6 +14,8 @@ import EditProfileScreen from './EditProfileScreen';
 import PropertyScreen from './PropertyScreen';
 import PropertyDetail from './PropertyDetail';
 import PropertyAddForm from './PropertyAddForm';
+import OrderScreen from './OrderScreen';
+import OrderAddScreen from './OrderAddScreen';
 
 const HomeStack = createStackNavigator();
 const DetailsStack = createStackNavigator();
@@ -166,6 +168,24 @@ const HomeStackScreen = ({navigation}) => (
         ),
       }}
     />
+
+
+
+<HomeStack.Screen name="OrderScreen" component={OrderScreen} options={{
+        title:'Riyapola',
+        headerLeft: () => (
+            <Icon.Button name="ios-menu" size={25} backgroundColor= '#303F9F' onPress={() => navigation.openDrawer()}></Icon.Button>
+        )
+        }} />
+
+
+<HomeStack.Screen name="OrderAddScreen" component={OrderAddScreen} options={{
+        title:'Riyapola',
+        headerLeft: () => (
+            <Icon.Button name="ios-menu" size={25} backgroundColor= '#303F9F' onPress={() => navigation.openDrawer()}></Icon.Button>
+        )
+        }} />
+
   </HomeStack.Navigator>
 );
 
