@@ -55,7 +55,9 @@ const HomeScreen = ({navigation}) => {
           </View>
           <Text style={styles.categoryBtnTxt}>Paints</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.categoryBtn}  onPress={() =>
+            navigation.navigate('OrderScreen', {title: 'Property Listings'})
+          }>
           <View style={styles.categoryIcon}>
             <MaterialCommunityIcons
               name="television"
