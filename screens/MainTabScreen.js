@@ -172,7 +172,7 @@ const HomeStackScreen = ({navigation}) => (
 
 
 <HomeStack.Screen name="OrderScreen" component={OrderScreen} options={{
-        title:'Riyapola',
+        title:'Procurement System',
         headerLeft: () => (
             <Icon.Button name="ios-menu" size={25} backgroundColor= '#303F9F' onPress={() => navigation.openDrawer()}></Icon.Button>
         )
