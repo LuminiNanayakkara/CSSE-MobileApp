@@ -14,7 +14,7 @@ import Share from 'react-native-share';
 
 import files from '../assets/filesBase64';
 
-const ProfileScreen = () => {
+const ProfileScreen = ({navigation}) => {
 
   const myCustomShare = async() => {
     
@@ -47,8 +47,8 @@ const ProfileScreen = () => {
             <Title style={[styles.title, {
               marginTop:15,
               marginBottom: 5,
-            }]}>Lumini</Title>
-            <Caption style={styles.caption}>@Lumee</Caption>
+            }]}>Harish</Title>
+            <Caption style={styles.caption}>@Harish</Caption>
           </View>
         </View>
       </View>
@@ -60,11 +60,11 @@ const ProfileScreen = () => {
         </View>
         <View style={styles.row}>
           <Icon name="phone" color="#777777" size={20}/>
-          <Text style={{color:"#777777", marginLeft: 20}}>+94767205950</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>+94766791235</Text>
         </View>
         <View style={styles.row}>
           <Icon name="email" color="#777777" size={20}/>
-          <Text style={{color:"#777777", marginLeft: 20}}>test@email.com</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>sitemanager1@email.com</Text>
         </View>
       </View>
 
@@ -77,23 +77,23 @@ const ProfileScreen = () => {
             <Caption>2021/10/10</Caption>
           </View>
           <View style={styles.infoBox}>
-            <Title>Listings</Title>
+            <Title>Orders</Title>
             <Caption>12</Caption>
           </View>
       </View>
 
       <View style={styles.menuWrapper}>
-        <TouchableRipple onPress={() => {}}>
+        <TouchableRipple onPress={() => navigation.navigate('ApproveCart')}>
           <View style={styles.menuItem}>
             <Icon name="heart-outline" color="#FF6347" size={25}/>
-            <Text style={styles.menuItemText}>Your Favorites</Text>
+            <Text style={styles.menuItemText}>Approval Cart</Text>
           </View>
         </TouchableRipple>
      
-        <TouchableRipple onPress={() => {}}>
+        <TouchableRipple onPress={() => navigation.navigate('RequestApproveCart')}>
           <View style={styles.menuItem}>
             <Icon name="account-check-outline" color="#FF6347" size={25}/>
-            <Text style={styles.menuItemText}>Support</Text>
+            <Text style={styles.menuItemText}>Request Approval Cart</Text>
           </View>
         </TouchableRipple>
         <TouchableRipple onPress={() => {}}>

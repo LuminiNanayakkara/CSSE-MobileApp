@@ -16,6 +16,8 @@ import PropertyDetail from './PropertyDetail';
 import PropertyAddForm from './PropertyAddForm';
 import OrderScreen from './OrderScreen';
 import OrderAddScreen from './OrderAddScreen';
+import CartScreen1 from './CartScreen1';
+import CartScreen2 from './CartScreen2';
 
 const HomeStack = createStackNavigator();
 const DetailsStack = createStackNavigator();
@@ -58,10 +60,10 @@ const MainTabScreen = () => (
       }}
     />
     <Tab.Screen
-      name="Favourites"
-      component={ExploreScreen}
+      name="Cart"
+      component={CartScreen1}
       options={{
-        tabBarLabel: 'Favourites',
+        tabBarLabel: 'Cart',
         tabBarColor: '#303F9F',
         tabBarIcon: ({color}) => (
           <Icon name="ios-heart" color={color} size={26} />
@@ -258,6 +260,20 @@ const ProfileStackScreen = ({navigation}) => (
         title: 'Edit Profile',
       }}
       component={EditProfileScreen}
+    />
+    <ProfileStack.Screen
+      name="ApproveCart"
+      options={{
+        title: 'Approval Cart',
+      }}
+      component={CartScreen1}
+    />
+    <ProfileStack.Screen
+      name="RequestApproveCart"
+      options={{
+        title: 'Request Approval Cart',
+      }}
+      component={CartScreen2}
     />
   </ProfileStack.Navigator>
 );
